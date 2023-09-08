@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EF06221B2AA997EA001FB5AA /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06221A2AA997EA001FB5AA /* TableViewHelpers.swift */; };
+		EF0622212AAA9F33001FB5AA /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0622202AAA9F33001FB5AA /* CorrectAnswerCell.xib */; };
+		EF0622232AAAA556001FB5AA /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0622222AAAA556001FB5AA /* WrongAnswerCell.xib */; };
 		EF0B4E422AA0749800065605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B4E412AA0749800065605 /* AppDelegate.swift */; };
 		EF0B4E442AA0749800065605 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B4E432AA0749800065605 /* SceneDelegate.swift */; };
 		EF0B4E4B2AA0749A00065605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0B4E4A2AA0749A00065605 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		EF06221A2AA997EA001FB5AA /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
+		EF0622202AAA9F33001FB5AA /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
+		EF0622222AAAA556001FB5AA /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
 		EF0B4E3E2AA0749800065605 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0B4E412AA0749800065605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0B4E432AA0749800065605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				EF0B4E752AA087B500065605 /* QuestionViewController.xib */,
 				EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */,
 				EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */,
+				EF0622202AAA9F33001FB5AA /* CorrectAnswerCell.xib */,
+				EF0622222AAAA556001FB5AA /* WrongAnswerCell.xib */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -248,8 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0B4E4E2AA0749A00065605 /* LaunchScreen.storyboard in Resources */,
+				EF0622232AAAA556001FB5AA /* WrongAnswerCell.xib in Resources */,
 				EF0B4E4B2AA0749A00065605 /* Assets.xcassets in Resources */,
 				EF0B4E762AA087B500065605 /* QuestionViewController.xib in Resources */,
+				EF0622212AAA9F33001FB5AA /* CorrectAnswerCell.xib in Resources */,
 				EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
