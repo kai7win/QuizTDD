@@ -24,18 +24,6 @@
         "identifier" : "EF0B4E532AA0749A00065605",
         "name" : "QuizAppTests"
       }
-    },
-    {
-      "parallelizable" : true,
-      "skippedTests" : [
-        "QuizAppUITests",
-        "QuizAppUITestsLaunchTests"
-      ],
-      "target" : {
-        "containerPath" : "container:QuizApp.xcodeproj",
-        "identifier" : "EF0B4E5D2AA0749A00065605",
-        "name" : "QuizAppUITests"
-      }
     }
   ],
   "version" : 1
