@@ -7,7 +7,7 @@
 
 import UIKit
 import XCTest
-import QuizEngine
+@testable import QuizEngine
 @testable import QuizApp
 
 class NavigationControllerRouterTest:XCTestCase{
@@ -23,11 +23,11 @@ class NavigationControllerRouterTest:XCTestCase{
         
         let viewController = UIViewController()
         let seconfViewController = UIViewController()
-        factory.stub(question:"Q1",with:viewController)
-        factory.stub(question:"Q2",with:seconfViewController)
+        factory.stub(question:Question.singleAnswer("Q1"),with:viewController)
+        factory.stub(question:Question.singleAnswer("Q2"),with:seconfViewController)
         
-        sut.routeTo(question:"Q1",answerCallback:{ _ in })
-        sut.routeTo(question:"Q2",answerCallback:{ _ in })
+        sut.routeTo(question:Question.singleAnswer("Q1"),answerCallback:{ _ in })
+        sut.routeTo(question:Question.singleAnswer("Q2"),answerCallback:{ _ in })
         
         XCTAssertEqual(navigationController.viewControllers.count,2)
         XCTAssertEqual(navigationController.viewControllers.first,viewController)
@@ -37,11 +37,31 @@ class NavigationControllerRouterTest:XCTestCase{
     func test_routeToSecondQuestion_presentsQuestionControllerWithRightCallback(){
         
         var callbackWasFired = false
-        sut.routeTo(question:"Q1",answerCallback:{ _ in callbackWasFired = true })
-        factory.answerCallback["Q1"]!("anything")
+        sut.routeTo(question:Question.singleAnswer("Q1"),answerCallback:{ _ in callbackWasFired = true })
+        factory.answerCallback[Question.singleAnswer("Q1")]!("anything")
         
         XCTAssertTrue(callbackWasFired)
     }
+    
+    
+    func test_routeToResult_showsResultController(){
+        
+        let viewController = UIViewController()
+        let result = Result.make(answers: [Question.singleAnswer("Q1"):"A1"], score: 10)
+        
+        let secondViewController = UIViewController()
+        let secondResult = Result.make(answers: [Question.singleAnswer("Q1"):"A1"], score: 20)
+        
+        factory.stub(result:result,with:viewController)
+        factory.stub(result:secondResult,with:secondViewController)
+        sut.routeTo(result:result)
+        sut.routeTo(result:secondResult)
+        
+        XCTAssertEqual(navigationController.viewControllers.count,2)
+        XCTAssertEqual(navigationController.viewControllers.first,viewController)
+        XCTAssertEqual(navigationController.viewControllers.last,secondViewController)
+    }
+    
     
     class NonAnimatedNavigationController:UINavigationController{
         override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -51,17 +71,44 @@ class NavigationControllerRouterTest:XCTestCase{
     
     class ViewControllerFactoryStub:ViewControllerFactory{
         
-        private var stubbedQuestions = [String:UIViewController]()
-        var answerCallback = [String:(String) -> Void]()
+        private var stubbedQuestions = Dictionary<Question<String>,UIViewController>()
+        private var stubbedResults = Dictionary<Result<Question<String>,String>,UIViewController>()
         
-        func stub(question:String,with viewController:UIViewController){
+        var answerCallback = Dictionary<Question<String>,(String) -> Void>()
+        
+        func stub(question:Question<String>,with viewController:UIViewController){
             stubbedQuestions[question] = viewController
         }
         
-        func questionViewController(for question:String,answerCallback:@escaping(String) -> Void) -> UIViewController{
+        
+        func stub(result:Result<Question<String>,String>,with viewController:UIViewController){
+            stubbedResults[result] = viewController
+        }
+        
+        func questionViewController(for question:Question<String>,answerCallback:@escaping(String) -> Void) -> UIViewController{
             self.answerCallback[question] = answerCallback
             return stubbedQuestions[question] ?? UIViewController()
         }
+        
+        func resultViewController(for result: Result<Question<String>, String>) -> UIViewController {
+            return stubbedResults[result] ?? UIViewController()
+        }
     }
     
+}
+
+
+extension Result:Hashable{
+    
+    static func make(answers:[Question:Answer],score:Int) -> Result<Question,Answer>{
+        return Result(answers: answers, score: score)
+    }
+
+    public var hashValue:Int{
+        return 1
+    }
+    
+    public static func ==(lhs:Result<Question,Answer>,rhs:Result<Question,Answer>) -> Bool{
+        return lhs.score == rhs.score
+    }
 }
