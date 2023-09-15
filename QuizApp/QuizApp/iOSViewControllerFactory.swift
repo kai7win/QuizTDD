@@ -20,7 +20,7 @@ class iOSViewControllerFactory:ViewControllerFactory{
         
         switch question {
         case .singleAnswer(let value):
-            return QuestionViewController(question: value, options: options[question]!) { _ in }
+            return QuestionViewController(question: value, options: options[question]!,selection: answerCallback)
         default:
             return UIViewController()
         }

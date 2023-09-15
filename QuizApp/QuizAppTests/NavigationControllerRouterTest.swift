@@ -74,7 +74,7 @@ class NavigationControllerRouterTest:XCTestCase{
         private var stubbedQuestions = Dictionary<Question<String>,UIViewController>()
         private var stubbedResults = Dictionary<Result<Question<String>,[String]>,UIViewController>()
         
-        var answerCallback = Dictionary<Question<String>,(String) -> Void>()
+        var answerCallback = Dictionary<Question<String>,([String]) -> Void>()
         
         func stub(question:Question<String>,with viewController:UIViewController){
             stubbedQuestions[question] = viewController
