@@ -10,7 +10,6 @@ import UIKit
 class ResultsViewController:UIViewController,UITableViewDataSource,UITableViewDelegate{
     
     @IBOutlet weak var headerLabel: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
    
     private var summary = ""
