@@ -10,6 +10,7 @@ import QuizEngine
 
 
 class NavigationControllerRouter:Router{
+
     
     private let navigationController:UINavigationController
     private let factory:ViewControllerFactory
@@ -54,7 +55,7 @@ class NavigationControllerRouter:Router{
 }
 
 
-private class SubmitButtonController{
+private class SubmitButtonController:NSObject{
     let button:UIBarButtonItem
     let callback:([String]) -> Void
     private var model:[String] = []
@@ -62,6 +63,7 @@ private class SubmitButtonController{
     init(button: UIBarButtonItem,_ callback: @escaping ([String]) -> Void) {
         self.button = button
         self.callback = callback
+        super.init()
         self.setup()
     }
     

@@ -10,13 +10,17 @@ import QuizEngine
 
 class iOSViewControllerFactory:ViewControllerFactory{
     
-    
     private let questions:[Question<String>]
     private let options:Dictionary<Question<String>,[String]>
+    private let correctAnswers:Dictionary<Question<String>,[String]>
     
-    init(questions:[Question<String>],options: Dictionary<Question<String>, [String]>) {
+    init(questions:[Question<String>],
+         options: Dictionary<Question<String>, [String]>,
+         correctAnswers:Dictionary<Question<String>,[String]>
+    ) {
         self.questions = questions
         self.options = options
+        self.correctAnswers = correctAnswers
     }
     
     func questionViewController(for question: Question<String>, answerCallback: @escaping ([String]) -> Void) -> UIViewController {
@@ -48,7 +52,10 @@ class iOSViewControllerFactory:ViewControllerFactory{
     
     
     func resultViewController(for result: QuizEngine.Result<Question<String>, [String]>) -> UIViewController {
-        return UIViewController()
+        
+        let presenter = ResultsPresenter(result: result, questions: questions, correctAnswers: correctAnswers)
+        
+        return ResultsViewController(summary: presenter.summary, answers:presenter.presentableAnswers)
     }
     
 }

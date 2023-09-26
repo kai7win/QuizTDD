@@ -33,7 +33,6 @@
 		EF488DC62ABFC4B700687156 /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC52ABFC4B700687156 /* ResultsPresenter.swift */; };
 		EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */; };
 		EF488DCA2AC01F7000687156 /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC92AC01F7000687156 /* QuestionPresenter.swift */; };
-		EFA840022AAC9D5E00E3F730 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA840012AAC9D5E00E3F730 /* Question.swift */; };
 		EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */; };
 		EFD4A6662AA9515900178CD0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */; };
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
@@ -94,7 +93,6 @@
 		EF488DC52ABFC4B700687156 /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
 		EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
 		EF488DC92AC01F7000687156 /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
-		EFA840012AAC9D5E00E3F730 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				EF06222F2AAC0DB8001FB5AA /* PresentableAnswer.swift */,
 				EF38200C2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift */,
 				EF1363852AB286240098C1F0 /* ViewControllerFactory.swift */,
-				EFA840012AAC9D5E00E3F730 /* Question.swift */,
 				EF1363892AB288180098C1F0 /* iOSViewControllerFactory.swift */,
 				EF488DC92AC01F7000687156 /* QuestionPresenter.swift */,
 			);
@@ -312,7 +309,6 @@
 				EF0622322AAC0DE3001FB5AA /* CorrectAnswerCell.swift in Sources */,
 				EF0B4E742AA086B100065605 /* QuestionViewController.swift in Sources */,
 				EF0622302AAC0DB8001FB5AA /* PresentableAnswer.swift in Sources */,
-				EFA840022AAC9D5E00E3F730 /* Question.swift in Sources */,
 				EF0622342AAC0E04001FB5AA /* WrongAnswerCell.swift in Sources */,
 				EF488DCA2AC01F7000687156 /* QuestionPresenter.swift in Sources */,
 				EF13638A2AB288180098C1F0 /* iOSViewControllerFactory.swift in Sources */,
