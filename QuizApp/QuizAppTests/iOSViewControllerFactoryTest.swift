@@ -57,6 +57,14 @@ class iOSViewControllerFactoryTest:XCTestCase{
         XCTAssertTrue(makeQuestionController(question: multipleAnswerQuestion).allowsMultipleSelection)
     }
     
+    func test_resultsViewController_createsControllerWithTitle(){
+        
+        let results =  makeResults()
+        
+        XCTAssertEqual(results.controller.title,results.presenter.title)
+    }
+    
+    
     func test_resultsViewController_createsControllerWithSummary(){
         
         let results =  makeResults()
@@ -74,7 +82,7 @@ class iOSViewControllerFactoryTest:XCTestCase{
     
     // MARK: - Helper
     
-    func makeSUT(options:Dictionary<Question<String>,[String]> = [:],correctAnswers:Dictionary<Question<String>,[String]> = [:]) -> iOSViewControllerFactory{
+    func makeSUT(options:Dictionary<Question<String>,[String]> = [:],correctAnswers:Dictionary<Question<String>,Set<String>> = [:]) -> iOSViewControllerFactory{
         return iOSViewControllerFactory(questions:[singleAnswerQuestion,multipleAnswerQuestion],options:options,correctAnswers: correctAnswers)
     }
     
@@ -84,15 +92,16 @@ class iOSViewControllerFactoryTest:XCTestCase{
     
     func makeResults() -> (controller:ResultsViewController,presenter:ResultsPresenter){
         
-        let userAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
+        let userAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:Set(["A1","A2"])]
         
-        let correctAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
+        let correctAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:Set(["A1","A2"])]
         
         let result = Result(answers:userAnswers, score: 2)
         let questions = [singleAnswerQuestion,multipleAnswerQuestion]
         
+        let orderedOptions = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
         
-        let presenter = ResultsPresenter(result: result, questions: questions, correctAnswers: correctAnswers)
+        let presenter = ResultsPresenter(result: result, questions: questions,options: orderedOptions, correctAnswers: correctAnswers)
         
         let sut = makeSUT(correctAnswers: correctAnswers)
         let controller = sut.resultViewController(for: result) as! ResultsViewController
