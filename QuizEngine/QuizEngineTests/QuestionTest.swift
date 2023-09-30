@@ -11,20 +11,36 @@ import XCTest
 
 class QuestionTest:XCTestCase{
     
-    func test_hashValue_singleAnswer_returnsTypeHash(){
+    func test_hashValue_withSameWrappedValue_isDifferentForSingleAndMultiplerAnswer(){
+
+        let aValue = UUID()
+
+        XCTAssertNotEqual(Question.singleAnswer(aValue).hashValue,Question.multipleAnswer(aValue).hashValue)
+    }
+
+    
+    func test_hashValue_forSingleAnswer(){
         
-        let type = "a string"
-        let sut = Question.singleAnswer(type)
+        let aValue = UUID()
+        let anotherValue = UUID()
         
-        XCTAssertEqual(sut.hashValue,type.hashValue)
+        XCTAssertEqual(Question.singleAnswer(aValue).hashValue,
+                       Question.singleAnswer(aValue).hashValue)
+        
+        XCTAssertNotEqual(Question.singleAnswer(aValue).hashValue,
+                       Question.singleAnswer(anotherValue).hashValue)
     }
     
-    func test_hashValue_mutipleAnswer_returnsTypeHash(){
+    func test_hashValue_forMutipleAnswer(){
         
-        let type = "a string"
-        let sut = Question.singleAnswer(type)
+        let aValue = UUID()
+        let anotherValue = UUID()
         
-        XCTAssertEqual(sut.hashValue,type.hashValue)
+        XCTAssertEqual(Question.multipleAnswer(aValue).hashValue,
+                       Question.multipleAnswer(aValue).hashValue)
+        
+        XCTAssertNotEqual(Question.multipleAnswer(aValue).hashValue,
+                       Question.multipleAnswer(anotherValue).hashValue)
     }
     
     func test_equal_isEqual(){
