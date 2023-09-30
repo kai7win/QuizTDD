@@ -16,13 +16,13 @@
 		EF381FFE2AAC598F00ACFEF0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DB2AAC40F100375F75 /* Router.swift */; };
 		EF381FFF2AAC598F00ACFEF0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8D92AAC40D800375F75 /* Result.swift */; };
 		EF3820002AAC598F00ACFEF0 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B52A8B032B0037B36D /* Flow.swift */; };
-		EF3820012AAC599F00ACFEF0 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DD2AAC414200375F75 /* GameTest.swift */; };
+		EF3820012AAC599F00ACFEF0 /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */; };
 		EF3820022AAC599F00ACFEF0 /* RouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8E12AAC443700375F75 /* RouterSpy.swift */; };
 		EF3820032AAC599F00ACFEF0 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B32A8B01890037B36D /* FlowTest.swift */; };
 		EF9E50512AC38DFC00803048 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30335C2AC38CF000D7FB31 /* Question.swift */; };
 		EF9FB8DA2AAC40D800375F75 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8D92AAC40D800375F75 /* Result.swift */; };
 		EF9FB8DC2AAC40F100375F75 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DB2AAC40F100375F75 /* Router.swift */; };
-		EF9FB8DE2AAC414200375F75 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DD2AAC414200375F75 /* GameTest.swift */; };
+		EF9FB8DE2AAC414200375F75 /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */; };
 		EF9FB8E22AAC443700375F75 /* RouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8E12AAC443700375F75 /* RouterSpy.swift */; };
 		EF9FB8E42AAC44F300375F75 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8E32AAC44F300375F75 /* Game.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +56,7 @@
 		EF3820042AAC5A9600ACFEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF9FB8D92AAC40D800375F75 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		EF9FB8DB2AAC40F100375F75 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		EF9FB8DD2AAC414200375F75 /* GameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
+		EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedGameTest.swift; sourceTree = "<group>"; };
 		EF9FB8E12AAC443700375F75 /* RouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSpy.swift; sourceTree = "<group>"; };
 		EF9FB8E32AAC44F300375F75 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5DF9B32A8B01890037B36D /* FlowTest.swift */,
-				EF9FB8DD2AAC414200375F75 /* GameTest.swift */,
+				EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */,
 				EF9FB8E12AAC443700375F75 /* RouterSpy.swift */,
 			);
 			path = QuizEngineTests;
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5DF9B42A8B01890037B36D /* FlowTest.swift in Sources */,
-				EF9FB8DE2AAC414200375F75 /* GameTest.swift in Sources */,
+				EF9FB8DE2AAC414200375F75 /* DeprecatedGameTest.swift in Sources */,
 				EF9FB8E22AAC443700375F75 /* RouterSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3820012AAC599F00ACFEF0 /* GameTest.swift in Sources */,
+				EF3820012AAC599F00ACFEF0 /* DeprecatedGameTest.swift in Sources */,
 				EF3820022AAC599F00ACFEF0 /* RouterSpy.swift in Sources */,
 				EF3820032AAC599F00ACFEF0 /* FlowTest.swift in Sources */,
 			);
