@@ -53,6 +53,7 @@
 		DE5DF9B52A8B032B0037B36D /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		DEE87BA52A8B058700F96F90 /* QuizEngineTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QuizEngineTests; sourceTree = "<group>"; };
 		EF01419A2AC77E2E00D9E306 /* QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTest.swift; sourceTree = "<group>"; };
+		EF0141A32AC7C89A00D9E306 /* QuizEngine.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = QuizEngine.xctestplan; sourceTree = "<group>"; };
 		EF30335C2AC38CF000D7FB31 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EF381FE82AAC587B00ACFEF0 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF381FEF2AAC587B00ACFEF0 /* QuizEngine_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngine_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +102,7 @@
 		DE5DF9912A8B01240037B36D = {
 			isa = PBXGroup;
 			children = (
+				EF0141A32AC7C89A00D9E306 /* QuizEngine.xctestplan */,
 				DEE87BA52A8B058700F96F90 /* QuizEngineTests */,
 				DE5DF99D2A8B01240037B36D /* QuizEngine */,
 				DE5DF9A72A8B01240037B36D /* QuizEngineTests */,
@@ -680,6 +682,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B963T3UC3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizEngine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -699,6 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B963T3UC3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizEngine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
