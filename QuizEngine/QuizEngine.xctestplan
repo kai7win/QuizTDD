@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "35A1C479-7C32-436F-B44C-0853497A64A1",
-      "name" : "Test Scheme Action",
+      "id" : "4C014CFF-A6CE-4827-B06A-30E0CCE60EBA",
+      "name" : "Configuration 1",
       "options" : {
 
       }
@@ -13,9 +13,8 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:QuizEngine.xcodeproj",
+        "containerPath" : "container:..\/QuizEngine\/QuizEngine.xcodeproj",
         "identifier" : "DE5DF9A22A8B01240037B36D",
         "name" : "QuizEngineTests"
       }
