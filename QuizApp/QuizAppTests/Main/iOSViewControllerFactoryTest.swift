@@ -82,7 +82,7 @@ class iOSViewControllerFactoryTest:XCTestCase{
     
     // MARK: - Helper
     
-    func makeSUT(options:Dictionary<Question<String>,[String]> = [:],correctAnswers:Dictionary<Question<String>,Set<String>> = [:]) -> iOSViewControllerFactory{
+    func makeSUT(options:Dictionary<Question<String>,[String]> = [:],correctAnswers:Dictionary<Question<String>,[String]> = [:]) -> iOSViewControllerFactory{
         return iOSViewControllerFactory(questions:[singleAnswerQuestion,multipleAnswerQuestion],options:options,correctAnswers: correctAnswers)
     }
     
@@ -92,9 +92,9 @@ class iOSViewControllerFactoryTest:XCTestCase{
     
     func makeResults() -> (controller:ResultsViewController,presenter:ResultsPresenter){
         
-        let userAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:Set(["A1","A2"])]
+        let userAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
         
-        let correctAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:Set(["A1","A2"])]
+        let correctAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
         
         let result = Result(answers:userAnswers, score: 2)
         let questions = [singleAnswerQuestion,multipleAnswerQuestion]
