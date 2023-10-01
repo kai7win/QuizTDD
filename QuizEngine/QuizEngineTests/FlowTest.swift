@@ -17,7 +17,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:[]).start()
         
-        XCTAssertTrue(delegate.routedQuestions.isEmpty)
+        XCTAssertTrue(delegate.handledQuestions.isEmpty)
     }
     
     
@@ -25,7 +25,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q1"]).start()
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q1"])
         
     }
     
@@ -33,7 +33,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q2"]).start()
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q2"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q2"])
         
     }
     
@@ -41,7 +41,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q1","Q2"]).start()
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q1"])
         
     }
     
@@ -52,7 +52,7 @@ class FlowTest:XCTestCase{
         sut.start()
         sut.start()
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q1","Q1"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q1","Q1"])
         
     }
     
@@ -66,7 +66,7 @@ class FlowTest:XCTestCase{
         delegate.answerCallback("A1")
         delegate.answerCallback("A2")
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q1","Q2","Q3"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q1","Q2","Q3"])
         
     }
     
@@ -78,7 +78,7 @@ class FlowTest:XCTestCase{
         sut.start()
         delegate.answerCallback("A1")
         
-        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.handledQuestions, ["Q1"])
         
     }
     
@@ -172,13 +172,13 @@ class FlowTest:XCTestCase{
     
     private class DelegateSpy: Router,QuizDelegate {
         
-        var routedQuestions: [String] = []
+        var handledQuestions: [String] = []
         var routedResult: Result<String, String>? = nil
         
         var answerCallback: (String) -> Void = { _ in }
         
         func handle(question: String, answerCallback: @escaping (String) -> Void) {
-            routedQuestions.append(question)
+            handledQuestions.append(question)
             self.answerCallback = answerCallback
         }
         
