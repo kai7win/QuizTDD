@@ -11,13 +11,13 @@ import XCTest
 
 class FlowTest:XCTestCase{
     
-    private let router = RouterSpy()
+    
     
     func test_start_withNoQuestions_doesNotRouteToQuestion(){
         
         makeSUT(questions:[]).start()
         
-        XCTAssertTrue(router.routedQuestions.isEmpty)
+        XCTAssertTrue(delegate.routedQuestions.isEmpty)
     }
     
     
@@ -25,7 +25,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q1"]).start()
         
-        XCTAssertEqual(router.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
         
     }
     
@@ -33,7 +33,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q2"]).start()
         
-        XCTAssertEqual(router.routedQuestions, ["Q2"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q2"])
         
     }
     
@@ -41,7 +41,7 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:["Q1","Q2"]).start()
         
-        XCTAssertEqual(router.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
         
     }
     
@@ -52,7 +52,7 @@ class FlowTest:XCTestCase{
         sut.start()
         sut.start()
         
-        XCTAssertEqual(router.routedQuestions, ["Q1","Q1"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q1","Q1"])
         
     }
     
@@ -63,10 +63,10 @@ class FlowTest:XCTestCase{
         let sut = makeSUT(questions:["Q1","Q2","Q3"])
         
         sut.start()
-        router.answerCallback("A1")
-        router.answerCallback("A2")
+        delegate.answerCallback("A1")
+        delegate.answerCallback("A2")
         
-        XCTAssertEqual(router.routedQuestions, ["Q1","Q2","Q3"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q1","Q2","Q3"])
         
     }
     
@@ -76,9 +76,9 @@ class FlowTest:XCTestCase{
         let sut = makeSUT(questions:["Q1"])
         
         sut.start()
-        router.answerCallback("A1")
+        delegate.answerCallback("A1")
         
-        XCTAssertEqual(router.routedQuestions, ["Q1"])
+        XCTAssertEqual(delegate.routedQuestions, ["Q1"])
         
     }
     
@@ -87,12 +87,12 @@ class FlowTest:XCTestCase{
         
         makeSUT(questions:[]).start()
         
-        XCTAssertEqual(router.routedResult!.answers,[:])
+        XCTAssertEqual(delegate.routedResult!.answers,[:])
     }
     
     func test_start_withOneQuestion_doesNotRouteToResult(){
         makeSUT(questions:["Q1"]).start()
-        XCTAssertNil(router.routedResult)
+        XCTAssertNil(delegate.routedResult)
     }
     
     func test_startAndAnswerFirst_withTwoQuestions_doesNotRoutesToResult(){
@@ -101,9 +101,9 @@ class FlowTest:XCTestCase{
         let sut = makeSUT(questions:["Q1","Q2"])
         
         sut.start()
-        router.answerCallback("A1")
+        delegate.answerCallback("A1")
         
-        XCTAssertNil(router.routedResult)
+        XCTAssertNil(delegate.routedResult)
     }
     
     
@@ -113,10 +113,10 @@ class FlowTest:XCTestCase{
         let sut = makeSUT(questions:["Q1","Q2"])
         
         sut.start()
-        router.answerCallback("A1")
-        router.answerCallback("A2")
+        delegate.answerCallback("A1")
+        delegate.answerCallback("A2")
         
-        XCTAssertEqual(router.routedResult!.answers, ["Q1":"A1","Q2":"A2"])
+        XCTAssertEqual(delegate.routedResult!.answers, ["Q1":"A1","Q2":"A2"])
     }
     
     
@@ -125,10 +125,10 @@ class FlowTest:XCTestCase{
         let sut = makeSUT(questions:["Q1","Q2"],scoring: { _ in 10 })
         
         sut.start()
-        router.answerCallback("A1")
-        router.answerCallback("A2")
+        delegate.answerCallback("A1")
+        delegate.answerCallback("A2")
         
-        XCTAssertEqual(router.routedResult!.score, 10)
+        XCTAssertEqual(delegate.routedResult!.score, 10)
     }
     
     func test_startAndAnswerFirstAndSecondQuestion_withTwoQuestions_scoresWithRightAnswers(){
@@ -139,18 +139,34 @@ class FlowTest:XCTestCase{
         })
         
         sut.start()
-        router.answerCallback("A1")
-        router.answerCallback("A2")
+        delegate.answerCallback("A1")
+        delegate.answerCallback("A2")
         
         XCTAssertEqual(receiveAnswers,  ["Q1":"A1","Q2":"A2"])
     }
     
     
     // MARK: - Helpers
+    private let delegate = RouterSpy()
+    
+    private weak var weakSUT:Flow<RouterSpy>?
+    
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        XCTAssertNil(weakSUT)
+    }
+    
     private func makeSUT(questions:[String],
                  scoring:@escaping ([String:String]) -> Int =  { _ in 0 }
     ) -> Flow<RouterSpy>{
-        return Flow(questions: questions,router:router,scoring: scoring)
+        
+        let sut = Flow(questions: questions,router:delegate,scoring: scoring)
+        
+        weakSUT = sut
+        
+        return sut
     }
     
     
