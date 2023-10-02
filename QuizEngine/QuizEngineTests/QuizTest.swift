@@ -7,17 +7,33 @@
 
 import Foundation
 import XCTest
-import QuizEngine
+@testable import QuizEngine
+
+final class Quiz{
+    
+    private let flow:Any
+    
+    init(flow: Any) {
+        self.flow = flow
+    }
+    
+    static func start<Question,Answer:Equatable,Delegate:QuizDelegate>(questions:[Question],delegate:Delegate,correctAnswers:[Question:Answer]) -> Quiz where Delegate.Question == Question,Delegate.Answer == Answer  {
+        
+        let flow = Flow(questions: questions, delegate: delegate, scoring: { scoring($0, correctAnswers: correctAnswers) })
+        flow.start()
+        return Quiz(flow: flow)
+    }
+}
 
 
 class QuizTest: XCTestCase {
     
     private let delegate = DelegateSpy()
-    private var quiz:Game<String,String,DelegateSpy>!
+    private var quiz:Quiz!
     
     override func setUp(){
         super.setUp()
-        quiz = startGame(questions: ["Q1", "Q2"], router: delegate, correctAnswers: ["Q1": "A1", "Q2": "A2"])
+        quiz = Quiz.start(questions: ["Q1", "Q2"], delegate: delegate, correctAnswers: ["Q1": "A1", "Q2": "A2"])
     }
     
     func test_startQuiz_answerOneOutOfTwoCorrectly_scoresZero() {
@@ -44,19 +60,29 @@ class QuizTest: XCTestCase {
         XCTAssertEqual(delegate.handleResult!.score, 2)
     }
     
-    private class DelegateSpy: Router {
+    private class DelegateSpy: Router,QuizDelegate {
         
         var handleResult: Result<String, String>? = nil
         
         var answerCallback: (String) -> Void = { _ in }
         
-        func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
+        func handle(question: String, answerCallback: @escaping (String) -> Void) {
             self.answerCallback = answerCallback
         }
         
+        func routeTo(question: String, answerCallback: @escaping (String) -> Void) {
+            handle(question: question, answerCallback: answerCallback)
+        }
+        
         func routeTo(result: Result<String, String>) {
+            handle(result: result)
+        }
+        
+        func handle(result: Result<String, String>) {
             handleResult = result
         }
+        
+        
     }
     
 }
