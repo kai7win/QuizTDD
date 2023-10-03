@@ -41,6 +41,7 @@ public func startGame<Question,Answer:Equatable,R:Router>(questions:[Question],r
 @available(*,deprecated)
 private class QuizDelegateToRouterAdapter<R:Router>:QuizDelegate where R.Answer:Equatable{
     
+  
     private let router:R
     private let correctAnswers:[R.Question:R.Answer]
     
@@ -67,7 +68,13 @@ private class QuizDelegateToRouterAdapter<R:Router>:QuizDelegate where R.Answer:
         router.routeTo(result: result)
     }
     
-    func handle(result: Result<R.Question, R.Answer>) {}
+    func handle(result: Result<R.Question, R.Answer>) { }
+    
+    private func scoring(_ answers:[R.Question:R.Answer],correctAnswers:[R.Question:R.Answer]) -> Int{
+        return answers.reduce(0){ (score,tuple) in
+            return score + (correctAnswers[tuple.key] == tuple.value ? 1 : 0)
+        }
+    }
     
     
 }
