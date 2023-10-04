@@ -68,7 +68,6 @@ private class QuizDelegateToRouterAdapter<R:Router>:QuizDelegate where R.Answer:
         router.routeTo(result: result)
     }
     
-    func handle(result: Result<R.Question, R.Answer>) { }
     
     private func scoring(_ answers:[R.Question:R.Answer],correctAnswers:[R.Question:R.Answer]) -> Int{
         return answers.reduce(0){ (score,tuple) in
