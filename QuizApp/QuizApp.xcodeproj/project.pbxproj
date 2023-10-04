@@ -37,6 +37,7 @@
 		EFD4A6662AA9515900178CD0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */; };
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
 		EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */; };
+		EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
+		EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0B4E4F2AA0749A00065605 /* Info.plist */,
+				EFE5EC4C2ACE1BAD006441AF /* Scoring */,
 				EF0141922AC77C8400D9E306 /* Routing */,
 				EF01418F2AC77BBC00D9E306 /* Presentation */,
 				EF0141892AC77ACE00D9E306 /* UI */,
@@ -361,6 +364,14 @@
 			isa = PBXGroup;
 			children = (
 				EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */,
+			);
+			path = Scoring;
+			sourceTree = "<group>";
+		};
+		EFE5EC4C2ACE1BAD006441AF /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -472,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0B4E422AA0749800065605 /* AppDelegate.swift in Sources */,
+				EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */,
 				EF0B4E442AA0749800065605 /* SceneDelegate.swift in Sources */,
 				EF488DC62ABFC4B700687156 /* ResultsPresenter.swift in Sources */,
 				EF0622322AAC0DE3001FB5AA /* CorrectAnswerCell.swift in Sources */,
