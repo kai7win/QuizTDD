@@ -26,6 +26,7 @@
 		EFE3DA342ACA1CB500B91F06 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */; };
 		EFE3DA362ACB76CF00B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
 		EFE3DA372ACB76F600B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
+		EFE5EC3F2ACE08A7006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EFE3DA302ACA167400B91F06 /* QuizDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDelegate.swift; sourceTree = "<group>"; };
 		EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
 		EFE3DA352ACB76CF00B91F06 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5DF9B32A8B01890037B36D /* FlowTest.swift */,
+				EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */,
 				EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */,
 				EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */,
 				EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */,
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC3F2ACE08A7006441AF /* ScoreTest.swift in Sources */,
 				DE5DF9B42A8B01890037B36D /* FlowTest.swift in Sources */,
 				EF9FB8DE2AAC414200375F75 /* DeprecatedGameTest.swift in Sources */,
 				EF53CBF62ACCEA8E008EB3A9 /* Assertions.swift in Sources */,
