@@ -19,7 +19,3 @@ public protocol QuizDelegate{
     func handle(result:Result<Question,Answer>)
 }
 
-#warning("Delete this at some point")
-public extension QuizDelegate{
-    func didCompleteQuiz(withAnswers:[(question:Question,answer:Answer)]) {}
-}
