@@ -36,6 +36,7 @@
 		EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */; };
 		EFD4A6662AA9515900178CD0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */; };
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
+		EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
+		EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,7 @@
 		EF0B4E572AA0749A00065605 /* QuizAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				EFE5EC492ACE1AF8006441AF /* Scoring */,
 				EF0141962AC77CD800D9E306 /* Main */,
 				EF0141952AC77CB400D9E306 /* Presentation */,
 				EF0141942AC77CAF00D9E306 /* UI */,
@@ -352,6 +355,14 @@
 				EF3820062AAC5BA400ACFEF0 /* QuizEngine.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFE5EC492ACE1AF8006441AF /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */,
+			);
+			path = Scoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +494,7 @@
 				EF488DC22ABFBE9200687156 /* ResultsPresenterTest.swift in Sources */,
 				EF38200B2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift in Sources */,
 				EF0B4E722AA085B100065605 /* QuestionViewControllerTest.swift in Sources */,
+				EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */,
 				EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */,
 				EF488DC42ABFC0B700687156 /* ResultHelper.swift in Sources */,
 				EF06221B2AA997EA001FB5AA /* TableViewHelpers.swift in Sources */,

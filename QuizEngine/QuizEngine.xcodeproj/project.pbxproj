@@ -31,6 +31,10 @@
 		EFE5EC412ACE190C006441AF /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */; };
 		EFE5EC422ACE1911006441AF /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */; };
 		EFE5EC432ACE1913006441AF /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF52ACCEA8E008EB3A9 /* Assertions.swift */; };
+		EFE5EC452ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */; };
+		EFE5EC462ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */; };
+		EFE5EC472ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */; };
+		EFE5EC482ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,7 @@
 		EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
 		EFE3DA352ACB76CF00B91F06 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
+		EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuizEngine.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		DE5DF9912A8B01240037B36D = {
 			isa = PBXGroup;
 			children = (
+				EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */,
 				DEE87BA52A8B058700F96F90 /* QuizEngineTests */,
 				DE5DF99D2A8B01240037B36D /* QuizEngine */,
 				DE5DF9A72A8B01240037B36D /* QuizEngineTests */,
@@ -303,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC452ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC462ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC472ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC482ACE1AAD006441AF /* QuizEngine.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
