@@ -27,6 +27,10 @@
 		EFE3DA362ACB76CF00B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
 		EFE3DA372ACB76F600B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
 		EFE5EC3F2ACE08A7006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */; };
+		EFE5EC402ACE1906006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */; };
+		EFE5EC412ACE190C006441AF /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */; };
+		EFE5EC422ACE1911006441AF /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */; };
+		EFE5EC432ACE1913006441AF /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF52ACCEA8E008EB3A9 /* Assertions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -367,8 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5EC432ACE1913006441AF /* Assertions.swift in Sources */,
+				EFE5EC402ACE1906006441AF /* ScoreTest.swift in Sources */,
 				EF3820012AAC599F00ACFEF0 /* DeprecatedGameTest.swift in Sources */,
 				EF3820032AAC599F00ACFEF0 /* FlowTest.swift in Sources */,
+				EFE5EC412ACE190C006441AF /* DelegateSpy.swift in Sources */,
+				EFE5EC422ACE1911006441AF /* QuizTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
