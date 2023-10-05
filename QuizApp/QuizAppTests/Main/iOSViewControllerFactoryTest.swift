@@ -99,9 +99,7 @@ class iOSViewControllerFactoryTest:XCTestCase{
         let result = Result(answers:userAnswers, score: 2)
         let questions = [singleAnswerQuestion,multipleAnswerQuestion]
         
-        let orderedOptions = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A1","A2"]]
-        
-        let presenter = ResultsPresenter(result: result, questions: questions,options: orderedOptions, correctAnswers: correctAnswers)
+        let presenter = ResultsPresenter(result: result, questions: questions, correctAnswers: correctAnswers)
         
         let sut = makeSUT(correctAnswers: correctAnswers)
         let controller = sut.resultViewController(for: result) as! ResultsViewController

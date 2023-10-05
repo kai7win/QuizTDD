@@ -9,10 +9,10 @@ import Foundation
 import QuizEngine
 
 struct ResultsPresenter{
-    
+  
+   
     let result:Result<Question<String>,[String]>
     let questions:[Question<String>]
-    let options: Dictionary<Question<String>,[String]>
     let correctAnswers:Dictionary<Question<String>,[String]>
     
     var title:String{
@@ -40,17 +40,9 @@ struct ResultsPresenter{
         case .singleAnswer(let value),.multipleAnswer(let value):
             return PresentableAnswer(
                 question: value,
-                answer: forrmattedAnswer(ordered(correctAnswer,for: question)),
-                wrongAnswer: forrmattedWrongAnswer(ordered(userAnswer,for: question), ordered(correctAnswer,for: question)))
+                answer: forrmattedAnswer(correctAnswer),
+                wrongAnswer: forrmattedWrongAnswer(userAnswer, correctAnswer))
         }
-    }
-    
-    
-    private func ordered(_ answers:[String],for question:Question<String>) -> [String]{
-        
-        guard let options = options[question] else { return []}
-        
-        return options.filter{ answers.contains($0) }
     }
     
     
