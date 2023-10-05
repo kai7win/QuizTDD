@@ -23,14 +23,11 @@ class ResultsPresenterTest:XCTestCase{
     
     func test_summary_withTwoQuestionsAndScoreOne_returnsSummary(){
 
-        let answers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A2","A3"]]
-        let correctAnswers = [singleAnswerQuestion:["A1"],multipleAnswerQuestion:["A2"]]
+        let userAnswers = [(singleAnswerQuestion,["A1"]),(multipleAnswerQuestion,["A2","A3"])]
+        let correctAnswers = [(singleAnswerQuestion,["A1"]),(multipleAnswerQuestion,["A2"])]
+       
+        let sut = makeSUT(userAnswers: userAnswers, correctAnswers: correctAnswers, score: 1)
         
-        let orderQuestion = [singleAnswerQuestion,multipleAnswerQuestion]
-
-
-        let result = Result(answers:answers,score:1)
-        let sut = ResultsPresenter(result:result,questions:orderQuestion, correctAnswers: correctAnswers)
         XCTAssertEqual(sut.summary, "You got 1/2 correct")
 
     }
@@ -97,8 +94,15 @@ class ResultsPresenterTest:XCTestCase{
     
     
     //Mark: - Helpers
-    private func makeSUT() -> ResultsPresenter{
-        return ResultsPresenter(userAnswers: [], correctAnswers: [], scorer: { _,_ in 0 })
+    private func makeSUT(
+        userAnswers:ResultsPresenter.Answers = [],
+        correctAnswers:ResultsPresenter.Answers = [],
+        score:Int = 0
+    ) -> ResultsPresenter{
+        return ResultsPresenter(
+            userAnswers: userAnswers,
+            correctAnswers: correctAnswers,
+            scorer: { _,_ in score })
     }
     
 }
