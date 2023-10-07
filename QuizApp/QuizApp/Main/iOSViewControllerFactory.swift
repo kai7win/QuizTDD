@@ -9,10 +9,19 @@ import UIKit
 import QuizEngine
 
 class iOSViewControllerFactory:ViewControllerFactory{
+    typealias Answers = [(question:Question<String>,answers:[String])]
+    
     
     private let questions:[Question<String>]
     private let options:Dictionary<Question<String>,[String]>
-    private let correctAnswers:Dictionary<Question<String>,[String]>
+    private let correctAnswers:() -> Answers
+    
+    init(options:Dictionary<Question<String>, [String]>,correctAnswers:Answers){
+        self.questions = correctAnswers.map { $0.question }
+        self.options = options
+        self.correctAnswers = { correctAnswers }
+    }
+    
     
     init(questions:[Question<String>],
          options: Dictionary<Question<String>, [String]>,
@@ -20,7 +29,11 @@ class iOSViewControllerFactory:ViewControllerFactory{
     ) {
         self.questions = questions
         self.options = options
-        self.correctAnswers = correctAnswers
+        self.correctAnswers =  {
+            questions.map{ question in
+                (question,correctAnswers[question]!)
+            }
+        }
     }
     
     func questionViewController(for question: Question<String>, answerCallback: @escaping ([String]) -> Void) -> UIViewController {
@@ -57,9 +70,7 @@ class iOSViewControllerFactory:ViewControllerFactory{
             userAnswers: questions.map{ question in
                 (question,result.answers[question]!)
             },
-            correctAnswers:  questions.map{ question in
-                (question,correctAnswers[question]!)
-            },
+            correctAnswers:  correctAnswers(),
             scorer: { _,_ in result.score })
         
         let controller = ResultsViewController(summary: presenter.summary, answers:presenter.presentableAnswers)
