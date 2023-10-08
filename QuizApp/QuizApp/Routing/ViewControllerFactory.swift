@@ -20,8 +20,3 @@ protocol ViewControllerFactory{
 }
 
 
-extension ViewControllerFactory{
-    func resultsViewController(for userAnswers:Answers) -> UIViewController{
-        return UIViewController()
-    }
-}

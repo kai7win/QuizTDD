@@ -157,6 +157,10 @@ class NavigationControllerRouterTest:XCTestCase{
             return stubbedQuestions[question] ?? UIViewController()
         }
         
+        func resultsViewController(for userAnswers:Answers) -> UIViewController{
+            return UIViewController()
+        }
+        
         func resultViewController(for result: Result<Question<String>, [String]>) -> UIViewController {
             return stubbedResults[result] ?? UIViewController()
         }
@@ -165,9 +169,12 @@ class NavigationControllerRouterTest:XCTestCase{
 }
 
 
-
 private extension UIBarButtonItem{
     func simulateTap(){
        target!.performSelector(onMainThread: action!, with: nil, waitUntilDone: true)
     }
 }
+
+
+
+
