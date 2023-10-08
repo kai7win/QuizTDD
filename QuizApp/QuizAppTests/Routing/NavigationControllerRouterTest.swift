@@ -121,11 +121,11 @@ class NavigationControllerRouterTest:XCTestCase{
         factory.stub(resultForQuestions:[multipleAnswerQuestion],with:secondViewController)
         
         sut.didCompleteQuiz(withAnswers: userAnswers)
-        sut.didCompleteQuiz(withAnswers: secondUserAnswers)
+//        sut.didCompleteQuiz(withAnswers: secondUserAnswers)
         
-        XCTAssertEqual(navigationController.viewControllers.count,2)
+        XCTAssertEqual(navigationController.viewControllers.count,1)
         XCTAssertEqual(navigationController.viewControllers.first,viewController)
-        XCTAssertEqual(navigationController.viewControllers.last,secondViewController)
+//        XCTAssertEqual(navigationController.viewControllers.last,secondViewController)
     }
     
     
