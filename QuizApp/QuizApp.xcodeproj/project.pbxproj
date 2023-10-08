@@ -29,7 +29,6 @@
 		EF38200B2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38200A2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift */; };
 		EF38200D2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38200C2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift */; };
 		EF488DC22ABFBE9200687156 /* ResultsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC12ABFBE9200687156 /* ResultsPresenterTest.swift */; };
-		EF488DC42ABFC0B700687156 /* ResultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC32ABFC0B700687156 /* ResultHelper.swift */; };
 		EF488DC62ABFC4B700687156 /* ResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC52ABFC4B700687156 /* ResultsPresenter.swift */; };
 		EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */; };
 		EF488DCA2AC01F7000687156 /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC92AC01F7000687156 /* QuestionPresenter.swift */; };
@@ -90,7 +89,6 @@
 		EF38200A2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouterTest.swift; sourceTree = "<group>"; };
 		EF38200C2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerRouter.swift; sourceTree = "<group>"; };
 		EF488DC12ABFBE9200687156 /* ResultsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenterTest.swift; sourceTree = "<group>"; };
-		EF488DC32ABFC0B700687156 /* ResultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHelper.swift; sourceTree = "<group>"; };
 		EF488DC52ABFC4B700687156 /* ResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPresenter.swift; sourceTree = "<group>"; };
 		EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
 		EF488DC92AC01F7000687156 /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 			children = (
 				EF01419F2AC77F0E00D9E306 /* Result */,
 				EF01419E2AC77F0600D9E306 /* Question */,
-				EF01419D2AC77EEB00D9E306 /* Helpers */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -281,14 +278,6 @@
 				EF0B4E712AA085B100065605 /* QuestionViewControllerTest.swift */,
 			);
 			path = Question;
-			sourceTree = "<group>";
-		};
-		EF01419D2AC77EEB00D9E306 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				EF488DC32ABFC0B700687156 /* ResultHelper.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		EF01419E2AC77F0600D9E306 /* Question */ = {
@@ -508,7 +497,6 @@
 				EF0B4E722AA085B100065605 /* QuestionViewControllerTest.swift in Sources */,
 				EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */,
 				EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */,
-				EF488DC42ABFC0B700687156 /* ResultHelper.swift in Sources */,
 				EF06221B2AA997EA001FB5AA /* TableViewHelpers.swift in Sources */,
 				EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */,
 				EF1363882AB286AE0098C1F0 /* iOSViewControllerFactoryTest.swift in Sources */,
