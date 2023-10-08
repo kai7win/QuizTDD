@@ -23,7 +23,7 @@ class iOSViewControllerFactory:ViewControllerFactory{
     }
     
     
-    init(questions:[Question<String>],
+    private init(questions:[Question<String>],
          options: Dictionary<Question<String>, [String]>,
          correctAnswers:Dictionary<Question<String>,[String]>
     ) {
