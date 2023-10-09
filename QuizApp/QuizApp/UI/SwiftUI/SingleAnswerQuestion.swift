@@ -16,17 +16,8 @@ struct SingleAnswerQuestion: View {
     
     var body: some View {
         VStack(alignment:.leading,spacing: 0) {
-            VStack(alignment: .leading, spacing: 16.0) {
-                Text(title)
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.blue)
-                    .padding(.top)
-                
-                Text(question)
-                    .font(.largeTitle)
-                    .fontWeight(.medium)
-            }.padding()
+            
+            QuestionHeader(title: title, question: question)
             
             ForEach(options,id:\.self){ option in
                 
@@ -63,3 +54,4 @@ struct SingleAnswerQuestion_Previews: PreviewProvider {
             selection: { _ in })
     }
 }
+
