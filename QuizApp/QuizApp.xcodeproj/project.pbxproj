@@ -38,6 +38,7 @@
 		EFA498402AD3D1130011AD26 /* iOSSwiftUIViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4983F2AD3D1130011AD26 /* iOSSwiftUIViewControllerFactoryTest.swift */; };
 		EFA498422AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498412AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift */; };
 		EFA498462AD4A4690011AD26 /* MultipleSelectionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498452AD4A4690011AD26 /* MultipleSelectionStoreTests.swift */; };
+		EFA498482AD4AFB00011AD26 /* MultipleSelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */; };
 		EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */; };
 		EFD4A6662AA9515900178CD0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */; };
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
@@ -104,6 +105,7 @@
 		EFA4983F2AD3D1130011AD26 /* iOSSwiftUIViewControllerFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactoryTest.swift; sourceTree = "<group>"; };
 		EFA498412AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactory.swift; sourceTree = "<group>"; };
 		EFA498452AD4A4690011AD26 /* MultipleSelectionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStoreTests.swift; sourceTree = "<group>"; };
+		EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStore.swift; sourceTree = "<group>"; };
 		EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				EFA498392AD390A50011AD26 /* SingleAnswerQuestion.swift */,
 				EFA4983D2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift */,
 				EFA4983B2AD3C7CC0011AD26 /* QuestionHeader.swift */,
+				EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				EF0B4E742AA086B100065605 /* QuestionViewController.swift in Sources */,
 				EF0622302AAC0DB8001FB5AA /* PresentableAnswer.swift in Sources */,
 				EF0622342AAC0E04001FB5AA /* WrongAnswerCell.swift in Sources */,
+				EFA498482AD4AFB00011AD26 /* MultipleSelectionStore.swift in Sources */,
 				EF488DCA2AC01F7000687156 /* QuestionPresenter.swift in Sources */,
 				EF13638A2AB288180098C1F0 /* iOSUIKitViewControllerFactory.swift in Sources */,
 				EF38200D2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift in Sources */,
