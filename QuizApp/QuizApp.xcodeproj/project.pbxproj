@@ -39,6 +39,8 @@
 		EFA498422AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498412AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift */; };
 		EFA498462AD4A4690011AD26 /* MultipleSelectionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498452AD4A4690011AD26 /* MultipleSelectionStoreTests.swift */; };
 		EFA498482AD4AFB00011AD26 /* MultipleSelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */; };
+		EFA4984A2AD4B0750011AD26 /* MultipleAnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498492AD4B0750011AD26 /* MultipleAnswerQuestion.swift */; };
+		EFA4984C2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4984B2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift */; };
 		EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */; };
 		EFD4A6662AA9515900178CD0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */; };
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
@@ -106,6 +108,8 @@
 		EFA498412AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIViewControllerFactory.swift; sourceTree = "<group>"; };
 		EFA498452AD4A4690011AD26 /* MultipleSelectionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStoreTests.swift; sourceTree = "<group>"; };
 		EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionStore.swift; sourceTree = "<group>"; };
+		EFA498492AD4B0750011AD26 /* MultipleAnswerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleAnswerQuestion.swift; sourceTree = "<group>"; };
+		EFA4984B2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTextSelectionCell.swift; sourceTree = "<group>"; };
 		EFD4A6632AA9505900178CD0 /* ResultsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTest.swift; sourceTree = "<group>"; };
 		EFD4A6652AA9515900178CD0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
@@ -377,6 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				EFA498392AD390A50011AD26 /* SingleAnswerQuestion.swift */,
+				EFA498492AD4B0750011AD26 /* MultipleAnswerQuestion.swift */,
+				EFA4984B2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift */,
 				EFA4983D2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift */,
 				EFA4983B2AD3C7CC0011AD26 /* QuestionHeader.swift */,
 				EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */,
@@ -527,6 +533,7 @@
 				EFA4983C2AD3C7CC0011AD26 /* QuestionHeader.swift in Sources */,
 				EF0B4E422AA0749800065605 /* AppDelegate.swift in Sources */,
 				EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */,
+				EFA4984C2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift in Sources */,
 				EF0B4E442AA0749800065605 /* SceneDelegate.swift in Sources */,
 				EF488DC62ABFC4B700687156 /* ResultsPresenter.swift in Sources */,
 				EF0622322AAC0DE3001FB5AA /* CorrectAnswerCell.swift in Sources */,
@@ -543,6 +550,7 @@
 				EFA498422AD3D3520011AD26 /* iOSSwiftUIViewControllerFactory.swift in Sources */,
 				EF1363862AB286240098C1F0 /* ViewControllerFactory.swift in Sources */,
 				EFA4983E2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift in Sources */,
+				EFA4984A2AD4B0750011AD26 /* MultipleAnswerQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
