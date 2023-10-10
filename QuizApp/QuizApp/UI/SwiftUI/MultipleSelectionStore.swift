@@ -16,7 +16,7 @@ struct MultipleSelectionStore{
     
     private let handler:([String]) -> Void
     
-    internal init(options: [String],handler:@escaping ([String]) -> Void = { _ in }) {
+    internal init(options: [String],handler:@escaping ([String]) -> Void) {
         self.options = options.map { MultipleSelectionOption(text: $0) }
         self.handler = handler
     }
