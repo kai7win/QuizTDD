@@ -33,6 +33,8 @@
 		EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */; };
 		EF488DCA2AC01F7000687156 /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC92AC01F7000687156 /* QuestionPresenter.swift */; };
 		EF7725EC2AD5F19300AB91B2 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7725EB2AD5F19300AB91B2 /* RoundedButton.swift */; };
+		EF7725EF2AD5F3E100AB91B2 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7725EE2AD5F3E100AB91B2 /* ResultView.swift */; };
+		EF7725F12AD5F9C400AB91B2 /* ResultAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7725F02AD5F9C400AB91B2 /* ResultAnswerCell.swift */; };
 		EFA4983A2AD390A50011AD26 /* SingleAnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA498392AD390A50011AD26 /* SingleAnswerQuestion.swift */; };
 		EFA4983C2AD3C7CC0011AD26 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4983B2AD3C7CC0011AD26 /* HeaderView.swift */; };
 		EFA4983E2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4983D2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift */; };
@@ -103,6 +105,8 @@
 		EF488DC72AC01E6700687156 /* QuestionPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenterTest.swift; sourceTree = "<group>"; };
 		EF488DC92AC01F7000687156 /* QuestionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 		EF7725EB2AD5F19300AB91B2 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		EF7725EE2AD5F3E100AB91B2 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		EF7725F02AD5F9C400AB91B2 /* ResultAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAnswerCell.swift; sourceTree = "<group>"; };
 		EFA498392AD390A50011AD26 /* SingleAnswerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAnswerQuestion.swift; sourceTree = "<group>"; };
 		EFA4983B2AD3C7CC0011AD26 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EFA4983D2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextSelectionCell.swift; sourceTree = "<group>"; };
@@ -376,7 +380,6 @@
 				EFA498492AD4B0750011AD26 /* MultipleAnswerQuestion.swift */,
 				EFA4984B2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift */,
 				EFA4983D2AD3C9EF0011AD26 /* SingleTextSelectionCell.swift */,
-				EFA4983B2AD3C7CC0011AD26 /* HeaderView.swift */,
 				EFA498472AD4AFB00011AD26 /* MultipleSelectionStore.swift */,
 			);
 			path = Question;
@@ -385,6 +388,7 @@
 		EF7725EA2AD5F17E00AB91B2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EFA4983B2AD3C7CC0011AD26 /* HeaderView.swift */,
 				EF7725EB2AD5F19300AB91B2 /* RoundedButton.swift */,
 			);
 			path = Helpers;
@@ -393,6 +397,8 @@
 		EF7725ED2AD5F22E00AB91B2 /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				EF7725EE2AD5F3E100AB91B2 /* ResultView.swift */,
+				EF7725F02AD5F9C400AB91B2 /* ResultAnswerCell.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -557,8 +563,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7725F12AD5F9C400AB91B2 /* ResultAnswerCell.swift in Sources */,
 				EFA4983C2AD3C7CC0011AD26 /* HeaderView.swift in Sources */,
 				EF0B4E422AA0749800065605 /* AppDelegate.swift in Sources */,
+				EF7725EF2AD5F3E100AB91B2 /* ResultView.swift in Sources */,
 				EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */,
 				EFA4984C2AD4B0E90011AD26 /* MultipleTextSelectionCell.swift in Sources */,
 				EF0B4E442AA0749800065605 /* SceneDelegate.swift in Sources */,
