@@ -17,7 +17,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:QuizApp.xcodeproj",
         "identifier" : "EF0B4E532AA0749A00065605",
