@@ -390,6 +390,13 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		EF7725ED2AD5F22E00AB91B2 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		EFA498372AD3904D0011AD26 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +412,7 @@
 			children = (
 				EF7725EA2AD5F17E00AB91B2 /* Helpers */,
 				EF7725E92AD5F12500AB91B2 /* Question */,
+				EF7725ED2AD5F22E00AB91B2 /* Result */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
