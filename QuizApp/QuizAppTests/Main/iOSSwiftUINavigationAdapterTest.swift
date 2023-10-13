@@ -138,22 +138,10 @@ class iOSSwiftUINavigationAdapterTest: XCTestCase {
     private var correctAnswers: [(Question<String>, [String])] {
         [(singleAnswerQuestion, ["A1"]), (multipleAnswerQuestion, ["A4", "A5"])]
     }
-
     
-    private class NonAnimatedNavigationController:UINavigationController{
+    private func makeSUT(playAgain:@escaping ()->Void = {}) -> (iOSSwiftUINavigationAdapter,QuizNavigationStore) {
         
-        override func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
-            super.setViewControllers(viewControllers, animated: false)
-        }
-        
-        override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-            super.pushViewController(viewController, animated: false)
-        }
-    }
-    
-    private func makeSUT(playAgain:@escaping ()->Void = {}) -> (iOSSwiftUINavigationAdapter,NonAnimatedNavigationController) {
-        
-        let navigation = NonAnimatedNavigationController()
+        let navigation = QuizNavigationStore()
         let sut = iOSSwiftUINavigationAdapter(navigation:navigation,options: options, correctAnswers: correctAnswers,playAgain:playAgain)
         return (sut,navigation)
     }
@@ -191,16 +179,19 @@ class iOSSwiftUINavigationAdapterTest: XCTestCase {
     }
 }
 
-private extension UINavigationController{
+private extension QuizNavigationStore{
     var singleCurrentView:SingleAnswerQuestion?{
-        (topViewController as? UIHostingController<SingleAnswerQuestion>)?.rootView
+        if case let .single(view) = currentView{ return view }
+        return nil
     }
     
     var multipleCurrentView:MultipleAnswerQuestion?{
-        (topViewController as? UIHostingController<MultipleAnswerQuestion>)?.rootView
+        if case let .multiple(view) = currentView{ return view }
+        return nil
     }
     
     var resultCurrentView:ResultView?{
-        (topViewController as? UIHostingController<ResultView>)?.rootView
+        if case let .result(view) = currentView{ return view }
+        return nil
     }
 }
