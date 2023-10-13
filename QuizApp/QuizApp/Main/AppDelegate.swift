@@ -6,27 +6,31 @@
 //
 
 import UIKit
-//import QuizEngine
+import QuizEngine
 
-@main
+//@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    var quiz:Quiz?
+    
+    private lazy var navigationController = UINavigationController()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
- 
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+
+        startNewQuiz()
+        
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        
+    private func startNewQuiz(){
+        let factory = iOSUIKitViewControllerFactory(options: options, correctAnswers: correctAnswers)
+        let router = NavigationControllerRouter(navigationController, factory: factory)
+        quiz = Quiz.start(questions: questions, delegate: router)
     }
 }
 
