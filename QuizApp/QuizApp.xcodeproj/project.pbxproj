@@ -53,6 +53,7 @@
 		EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */; };
 		EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */; };
 		EFF6D5DD2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6D5DC2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift */; };
+		EFF6D5DF2ADAA219003822F0 /* BasicQuizBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6D5DE2ADAA219003822F0 /* BasicQuizBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 		EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
 		EFF6D5DC2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilderTest.swift; sourceTree = "<group>"; };
+		EFF6D5DE2ADAA219003822F0 /* BasicQuizBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */,
+				EFF6D5DE2ADAA219003822F0 /* BasicQuizBuilder.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				EF7725F12AD5F9C400AB91B2 /* ResultAnswerCell.swift in Sources */,
 				EF92FAD02AD8E674005E527E /* QuizNavigationView.swift in Sources */,
 				EFA4983C2AD3C7CC0011AD26 /* HeaderView.swift in Sources */,
+				EFF6D5DF2ADAA219003822F0 /* BasicQuizBuilder.swift in Sources */,
 				EF0B4E422AA0749800065605 /* AppDelegate.swift in Sources */,
 				EF7725EF2AD5F3E100AB91B2 /* ResultView.swift in Sources */,
 				EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */,
