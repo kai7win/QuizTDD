@@ -52,6 +52,7 @@
 		EFD4A6682AA9520D00178CD0 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */; };
 		EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */; };
 		EFE5EC4E2ACE1BC4006441AF /* BasicScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */; };
+		EFF6D5DD2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6D5DC2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		EFD4A6672AA9520D00178CD0 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 		EFE5EC4D2ACE1BC4006441AF /* BasicScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicScore.swift; sourceTree = "<group>"; };
+		EFF6D5DC2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicQuizBuilderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE5EC4A2ACE1B0E006441AF /* ScoreTest.swift */,
+				EFF6D5DC2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift */,
 			);
 			path = Scoring;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				EFE5EC4B2ACE1B0E006441AF /* ScoreTest.swift in Sources */,
 				EFA498462AD4A4690011AD26 /* MultipleSelectionStoreTests.swift in Sources */,
 				EFA498402AD3D1130011AD26 /* iOSSwiftUINavigationAdapterTest.swift in Sources */,
+				EFF6D5DD2ADA1F3A003822F0 /* BasicQuizBuilderTest.swift in Sources */,
 				EF488DC82AC01E6700687156 /* QuestionPresenterTest.swift in Sources */,
 				EF06221B2AA997EA001FB5AA /* TableViewHelpers.swift in Sources */,
 				EFD4A6642AA9505900178CD0 /* ResultsViewControllerTest.swift in Sources */,
