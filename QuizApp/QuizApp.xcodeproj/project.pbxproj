@@ -25,7 +25,6 @@
 		EF1363882AB286AE0098C1F0 /* iOSUIKitViewControllerFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1363872AB286AE0098C1F0 /* iOSUIKitViewControllerFactoryTest.swift */; };
 		EF13638A2AB288180098C1F0 /* iOSUIKitViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1363892AB288180098C1F0 /* iOSUIKitViewControllerFactory.swift */; };
 		EF3820072AAC5BA400ACFEF0 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3820062AAC5BA400ACFEF0 /* QuizEngine.framework */; };
-		EF3820082AAC5BA400ACFEF0 /* QuizEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF3820062AAC5BA400ACFEF0 /* QuizEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF38200B2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38200A2AAC5C2900ACFEF0 /* NavigationControllerRouterTest.swift */; };
 		EF38200D2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38200C2AAC5E6C00ACFEF0 /* NavigationControllerRouter.swift */; };
 		EF488DC22ABFBE9200687156 /* ResultsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF488DC12ABFBE9200687156 /* ResultsPresenterTest.swift */; };
@@ -65,20 +64,6 @@
 			remoteInfo = QuizApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EF3820092AAC5BA400ACFEF0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EF3820082AAC5BA400ACFEF0 /* QuizEngine.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EF06221A2AA997EA001FB5AA /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
@@ -482,7 +467,6 @@
 				EF0B4E3A2AA0749800065605 /* Sources */,
 				EF0B4E3B2AA0749800065605 /* Frameworks */,
 				EF0B4E3C2AA0749800065605 /* Resources */,
-				EF3820092AAC5BA400ACFEF0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
