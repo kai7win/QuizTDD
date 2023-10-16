@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C124C70A-B328-43F3-B720-B9750A06ACB1",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:QuizApp.xcodeproj",
+        "identifier" : "EFF6D5EF2ADCBC7B003822F0",
+        "name" : "BasicQuizDomainTests"
+      }
+    }
+  ],
+  "version" : 1
+}

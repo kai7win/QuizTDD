@@ -5,8 +5,7 @@
 //  Created by Thomas on 2023/9/24.
 //
 
-import Foundation
-import QuizEngine
+import BasicQuizDomain
 
 final class ResultsPresenter{
   

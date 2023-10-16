@@ -10,7 +10,6 @@
 		DE5DF9A42A8B01240037B36D /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5DF99B2A8B01240037B36D /* QuizEngine.framework */; };
 		DE5DF9B42A8B01890037B36D /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B32A8B01890037B36D /* FlowTest.swift */; };
 		DE5DF9B62A8B032B0037B36D /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B52A8B032B0037B36D /* Flow.swift */; };
-		EF30335D2AC38CF000D7FB31 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30335C2AC38CF000D7FB31 /* Question.swift */; };
 		EF381FF02AAC587B00ACFEF0 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF381FE82AAC587B00ACFEF0 /* QuizEngine.framework */; };
 		EF381FFD2AAC598F00ACFEF0 /* DeprecatedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8E32AAC44F300375F75 /* DeprecatedGame.swift */; };
 		EF3820002AAC598F00ACFEF0 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B52A8B032B0037B36D /* Flow.swift */; };
@@ -18,7 +17,6 @@
 		EF3820032AAC599F00ACFEF0 /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DF9B32A8B01890037B36D /* FlowTest.swift */; };
 		EF53CBF62ACCEA8E008EB3A9 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF52ACCEA8E008EB3A9 /* Assertions.swift */; };
 		EF53CBF82ACCEB4E008EB3A9 /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */; };
-		EF9E50512AC38DFC00803048 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30335C2AC38CF000D7FB31 /* Question.swift */; };
 		EF9FB8DE2AAC414200375F75 /* DeprecatedGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */; };
 		EF9FB8E42AAC44F300375F75 /* DeprecatedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9FB8E32AAC44F300375F75 /* DeprecatedGame.swift */; };
 		EFE3DA312ACA167400B91F06 /* QuizDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA302ACA167400B91F06 /* QuizDelegate.swift */; };
@@ -26,8 +24,6 @@
 		EFE3DA342ACA1CB500B91F06 /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */; };
 		EFE3DA362ACB76CF00B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
 		EFE3DA372ACB76F600B91F06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA352ACB76CF00B91F06 /* Quiz.swift */; };
-		EFE5EC3F2ACE08A7006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */; };
-		EFE5EC402ACE1906006441AF /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */; };
 		EFE5EC412ACE190C006441AF /* DelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */; };
 		EFE5EC422ACE1911006441AF /* QuizTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */; };
 		EFE5EC432ACE1913006441AF /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53CBF52ACCEA8E008EB3A9 /* Assertions.swift */; };
@@ -60,7 +56,6 @@
 		DE5DF9B32A8B01890037B36D /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
 		DE5DF9B52A8B032B0037B36D /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		DEE87BA52A8B058700F96F90 /* QuizEngineTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QuizEngineTests; sourceTree = "<group>"; };
-		EF30335C2AC38CF000D7FB31 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EF381FE82AAC587B00ACFEF0 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF381FEF2AAC587B00ACFEF0 /* QuizEngine_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngine_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3820042AAC5A9600ACFEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +66,6 @@
 		EFE3DA302ACA167400B91F06 /* QuizDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDelegate.swift; sourceTree = "<group>"; };
 		EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTest.swift; sourceTree = "<group>"; };
 		EFE3DA352ACB76CF00B91F06 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
-		EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
 		EFE5EC442ACE1AAD006441AF /* QuizEngine.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuizEngine.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +132,6 @@
 				EF3820042AAC5A9600ACFEF0 /* Info.plist */,
 				DE5DF9B52A8B032B0037B36D /* Flow.swift */,
 				EFE3DA302ACA167400B91F06 /* QuizDelegate.swift */,
-				EF30335C2AC38CF000D7FB31 /* Question.swift */,
 				EF9FB8E32AAC44F300375F75 /* DeprecatedGame.swift */,
 				EFE3DA352ACB76CF00B91F06 /* Quiz.swift */,
 			);
@@ -149,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				DE5DF9B32A8B01890037B36D /* FlowTest.swift */,
-				EFE5EC3E2ACE08A7006441AF /* ScoreTest.swift */,
 				EF53CBF72ACCEB4E008EB3A9 /* DelegateSpy.swift */,
 				EF9FB8DD2AAC414200375F75 /* DeprecatedGameTest.swift */,
 				EFE3DA332ACA1CB500B91F06 /* QuizTest.swift */,
@@ -344,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF30335D2AC38CF000D7FB31 /* Question.swift in Sources */,
 				EFE3DA362ACB76CF00B91F06 /* Quiz.swift in Sources */,
 				DE5DF9B62A8B032B0037B36D /* Flow.swift in Sources */,
 				EF9FB8E42AAC44F300375F75 /* DeprecatedGame.swift in Sources */,
@@ -356,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE5EC3F2ACE08A7006441AF /* ScoreTest.swift in Sources */,
 				DE5DF9B42A8B01890037B36D /* FlowTest.swift in Sources */,
 				EF9FB8DE2AAC414200375F75 /* DeprecatedGameTest.swift in Sources */,
 				EF53CBF62ACCEA8E008EB3A9 /* Assertions.swift in Sources */,
@@ -369,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9E50512AC38DFC00803048 /* Question.swift in Sources */,
 				EFE3DA372ACB76F600B91F06 /* Quiz.swift in Sources */,
 				EF3820002AAC598F00ACFEF0 /* Flow.swift in Sources */,
 				EF381FFD2AAC598F00ACFEF0 /* DeprecatedGame.swift in Sources */,
@@ -382,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE5EC432ACE1913006441AF /* Assertions.swift in Sources */,
-				EFE5EC402ACE1906006441AF /* ScoreTest.swift in Sources */,
 				EF3820012AAC599F00ACFEF0 /* DeprecatedGameTest.swift in Sources */,
 				EF3820032AAC599F00ACFEF0 /* FlowTest.swift in Sources */,
 				EFE5EC412ACE190C006441AF /* DelegateSpy.swift in Sources */,
@@ -608,9 +596,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.QuizEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -626,8 +618,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.QuizEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import QuizEngine
+import BasicQuizDomain
 
 final class iOSUIKitViewControllerFactory:ViewControllerFactory{
 

@@ -5,6 +5,8 @@
 //  Created by Thomas on 2023/10/13.
 //
 
+import BasicQuizDomain
+
 let demoQuiz = try!
     BasicQuizBuilder(
         singleAnswerQuestion: "What's Mike's nationality?",

@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "FE018752-7F20-44AF-A184-1CDBD7B80F4C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:QuizApp.xcodeproj",
+        "identifier" : "EFF6D5EF2ADCBC7B003822F0",
+        "name" : "BasicQuizDomainTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:QuizApp.xcodeproj",
+        "identifier" : "EF0B4E532AA0749A00065605",
+        "name" : "QuizAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/QuizEngine\/QuizEngine.xcodeproj",
+        "identifier" : "DE5DF9A22A8B01240037B36D",
+        "name" : "QuizEngineTests"
+      }
+    }
+  ],
+  "version" : 1
+}

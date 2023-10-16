@@ -7,7 +7,7 @@
 
 import UIKit
 import XCTest
-@testable import QuizEngine
+@testable import BasicQuizDomain
 @testable import QuizApp
 
 class iOSUIKitViewControllerFactoryTest: XCTestCase {

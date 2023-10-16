@@ -7,7 +7,7 @@
 
 import Foundation
 import XCTest
-@testable import QuizApp
+@testable import BasicQuizDomain
 
 class ScoreTest:XCTestCase{
     

@@ -13,9 +13,8 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:QuizEngine.xcodeproj",
+        "containerPath" : "container:..\/QuizEngine\/QuizEngine.xcodeproj",
         "identifier" : "DE5DF9A22A8B01240037B36D",
         "name" : "QuizEngineTests"
       }
